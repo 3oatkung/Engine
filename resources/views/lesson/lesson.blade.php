@@ -46,8 +46,7 @@
                     <div class="row">
                         <div class="col-sm-7 video wow fadeInLeft" style="padding-top:20px;">
                             <div class="embed-responsive embed-responsive-16by9">
-		                    	<iframe class="embed-responsive-item" src="{{$lesson->videoUrl}}&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=9d426b" 
-		                    				webkitallowfullscreen mozallowfullscreen allowfullscreen>
+		                    	<iframe src="{{$lesson->videoUrl}}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		                    </div>
                         </div>
                         <div class="col-sm-5 list wow fadeInUp" style="padding-top:20px; text-align: left; color:white;">
