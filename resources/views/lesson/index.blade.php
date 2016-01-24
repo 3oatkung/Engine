@@ -37,11 +37,10 @@
                 	
                     <div class="row" style="padding-top:0px;">
                         <div class="col-sm-8 col-sm-offset-2 text wow fadeInUp" style="padding-top:20px; padding-bottom:20px;">
-                            <h1>Promote your <strong>Product</strong> with Marco</h1>
+                            <h1>มาเรียนรู้กับบทเรียนของเราได้เลย</h1>
                             <div class="description">
                             	<p>
-	                            	We have been working very hard to create the new version of our product. 
-	                            	It comes with a lot of new features, easy to follow videos and images. Check it out now!
+	                            	คุณจะได้เรียนรู็วิธีการสร้างเพจ ทำโฆษณา วิเคราะห์ข้อมูลสำคัญๆ ต่างๆ หลังจากเรียนจบจากบทเรียนเหล่านี้
                             	</p>
                             </div>
                         </div>
