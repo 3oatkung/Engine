@@ -66,15 +66,20 @@
                                     </div>      
                                     <div class="form-group">
                                         <label class="sr-only" for="form-first-name">วันที่ชำระเงิน</label>
-                                        <input type="text" name="date" placeholder="วันที่ชำระเงิน" value="{{ old('lastname') }}" class="form-control input-lg">
+                                        <input type="text" name="date" placeholder="วันที่ชำระเงิน (วัน/เดือน/ปี)" value="{{ old('lastname') }}" class="form-control input-lg">
                                     </div>
+
                                     <div class="form-group">
                                         <label class="sr-only" for="form-first-name">เวลาชำระเงิน</label>
-                                        <input type="text" name="time" placeholder="เวลาชำระเงิน" class="form-control input-lg">
+                                        <input type="text" name="time" placeholder="เวลาชำระเงิน (ชั่วโมง/นาที)" class="form-control input-lg">
                                     </div>
-                                    <div class="form-group hidden">
-                                        <label class="sr-only" for="form-first-name">วิธีการชำระเงิน</label>
-                                        <input type="text" name="paymentMethod" placeholder="วิธีการชำระเงิน" class="form-control input-lg" value="Bank Transfer">
+
+                                    <div class="form-group">
+                                      <label class="sr-only" for="form-first-name">วิธีการชำระเงิน</label>
+                                      <select type="text" name="paymentMethod" placeholder="วิธีการชำระเงิน" class="form-control input-lg">
+                                        <option>ชำระผ่าน Paypal</option>
+                                        <option>ชำระผ่าน การโอนเงิน</option>
+                                      </select>
                                     </div>
 
                                     <div class="row">

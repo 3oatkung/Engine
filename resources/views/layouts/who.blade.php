@@ -32,7 +32,18 @@
 	            </div>
 	            <div class="row">
 	            	<div class="col-sm-12 section-bottom-button wow fadeInUp">
-                        <a class="btn btn-link-1 scroll-link" href="#top-content">สมัครสมาชิกใหม่</a>
+	            		@if($memberStatus=="")
+								<!-- NON MEMBET MENU -->
+                        		<a class="btn btn-link-1 scroll-link" href="#pricing">สั่งซื้อเลย!</a>
+	      					@elseif ($memberStatus=="Member") 
+	      						<!-- MEMBER MENU -->
+                        		<a class="btn btn-link-1" href="/lesson">เข้าสู่บทเรียน</a>
+	      					@elseif ($memberStatus=="Admin") 
+	      						<!-- ADMIN MENU -->
+	      					@elseif ($memberStatus=="Unregistered")
+	      						<!-- GUEST MENU -->
+                        		<a class="btn btn-link-1" href="/auth/register">สมัครสมาชิกใหม่</a>
+	      					@endif
 	            	</div>
 	            </div>
 	        </div>

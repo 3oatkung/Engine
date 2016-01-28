@@ -120,8 +120,7 @@
 			                            	</p>
 			                            </div>
 			                            <div class="top-big-link wow fadeInUp">
-			                            	<a class="btn btn-link-1 scroll-link" href="#pricing">ค่าใช้จ่าย</a>
-			                            	<a class="btn btn-link-2 scroll-link" href="#always-beautiful">ทำไมต้องเรียนกับเรา</a>
+			                            	<a class="btn btn-link-2" href="/lesson">เข้าสู่บทเรียน</a>
 			                            </div>
 			                        </div>
 			                    </div>	      						
@@ -157,7 +156,7 @@
 
                             <div class="top-big-link wow fadeInUp">
                             	<a class="btn btn-link-1 scroll-link" href="#pricing">ค่าใช้จ่าย</a>
-                            	<a class="btn btn-link-2 scroll-link" href="#always-beautiful">ทำไมต้องเรียนกับเรา</a>
+                            	<a class="btn btn-link-2 scroll-link" href="#always-beautiful">สั่งซ์้อเลย</a>
                             </div>
                         </div>
                         <div class="col-sm-5 form-box wow fadeInUp">

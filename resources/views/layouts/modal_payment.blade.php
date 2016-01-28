@@ -24,6 +24,8 @@
 	                        <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
 	                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 	                        </form>
+
+	                        หลักจากชำระเงินเรียบร้อยแล้ว ให้แจ้งได้ที่ <a href="{{url()}}/createPayment">แจ้งการชำระเงิน</a>
 	                    </p>
 	                    <hr>
 	                    <h3>วิธีที่ 2 สั่งซื้อผ่านการโอนเงิน</h3>
@@ -33,7 +35,7 @@
 	                    </p>
         			</div>
         			<div class="modal-footer">
-        				<button type="button" class="btn" data-dismiss="modal">Close</button>
+        				<button type="button" class="btn" data-dismiss="modal">ปิด</button>
         			</div>
         		</div>
         	</div>

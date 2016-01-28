@@ -46,14 +46,8 @@ class PaymentController extends Controller
         $payment->date = $request->date;
         $payment->time = $request->time;
         $payment->method = $request->paymentMethod;
-
-        if ($payment->method=="Paypal")
-        {
-            $payment->date = Carbon::now('Asia/Bangkok')->format('d-m-Y');
-            $payment->time = Carbon::now('Asia/Bangkok')->format('H:i:s');
-        }
-
         $payment->save();
+
         $this->setMember($request->email);
         $this->sentPaymentEmail($payment);
         $this->sentPurchasedEmail($payment);
@@ -62,22 +56,7 @@ class PaymentController extends Controller
 
     public function paypalPaymentSuccess()
     {
-        if(!is_null(Auth::user()))
-        {
-            $this->setMember(Auth::user()->email);
-
-            $request = new Request();
-            $request->name = Auth::user()->name;
-            $request->email = Auth::user()->email;
-            $request->date = Carbon::now('Asia/Bangkok')->format('d-m-Y');
-            $request->time = Carbon::now('Asia/Bangkok')->format('H:i:s');
-            $request->paymentMethod = 'Paypal';
-            $this->createPayment($request);
-        }
-        else
-        {
-            return view('payment.payerForm');
-        }
+        return view('payment.paymentForm');
     }
 
     public function getPaymentIndex()

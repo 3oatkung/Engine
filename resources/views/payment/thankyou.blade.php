@@ -37,7 +37,7 @@
                         <div class="col-sm-6 col-md-offset-3 form-box wow fadeInUp">
                             <div class="form-top">
                                 <div >
-                                    <h3 style="text-align: center; color:white; padding-top: 20px;">คุณชำระเงินผ่าน Paypal เรียบร้อยแล้ว</h3>
+                                    <h3 style="text-align: center; color:white; padding-top: 20px;">คุณแจ้งการชำระเงิน เรียบร้อยแล้ว</h3>
                                     <p style="text-align: center; color:white;">คุณสามารถใช้งานบทเรียนของเราได้ทันที</p>
                                 </div>
                             </div>

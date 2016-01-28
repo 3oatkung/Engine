@@ -15,7 +15,22 @@
 @include('layouts.learning_step')
 @include('layouts.who')
 @include('layouts.signup_step')
+
+
+	            		@if($memberStatus=="")
+								<!-- NON MEMBET MENU -->
 @include('layouts.price')
+	      					@elseif ($memberStatus=="Member") 
+	      						<!-- MEMBER MENU -->
+  
+	      					@elseif ($memberStatus=="Admin") 
+	      						<!-- ADMIN MENU -->
+	      					@elseif ($memberStatus=="Unregistered")
+	      						<!-- GUEST MENU -->
+@include('layouts.price')
+	      					@endif
+
+
 
 @include('layouts.modal_payment')
 @include('layouts.footer')
