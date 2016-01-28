@@ -60,16 +60,16 @@
                             	<!-- Wrapper for slides -->
                             	<div class="carousel-inner" role="listbox">
                             		<div class="item active">
-                            			<a href='/lesson/02'><img src="{{url()}}/assets/img/carousel/LES002.png" alt=""></a>
+                            			<img src="{{url()}}/assets/img/carousel/LES002.png" alt="">
                             		</div>
                             		<div class="item">
-                            			<a href='/lesson/05'><img src="{{url()}}/assets/img/carousel/LES005.png" alt=""></a>
+                            			<img src="{{url()}}/assets/img/carousel/LES005.png" alt="">
                             		</div>
                             		<div class="item">
-                            			<a href='/lesson/06'><img src="{{url()}}/assets/img/carousel/LES006.png" alt=""></a>
+                            			<img src="{{url()}}/assets/img/carousel/LES006.png" alt="">
                             		</div>
                             		<div class="item">
-                            			<a href='/lesson/10'><img src="{{url()}}/assets/img/carousel/LES010.png" alt=""></a>
+                            			<img src="{{url()}}/assets/img/carousel/LES010.png" alt="">
                             		</div>
                             	</div>
                             </div>
