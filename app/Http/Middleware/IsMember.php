@@ -27,6 +27,7 @@ class IsMember
             $user = Auth::user();
             $user->memberStatus == "Member";
             $user->save();
+            dd($user);
             return $next($request);
         }
  
