@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Auth;
 use App\Payment;
+use App\User;
 
 class IsMember
 {
