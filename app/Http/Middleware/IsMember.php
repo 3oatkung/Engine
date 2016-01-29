@@ -26,10 +26,11 @@ class IsMember
         elseif(count(Payment::where('email',Auth::user()->email)->get())>0)
         {
             $users = User::where('id',Auth::user()->email)->get();
-            $user = $users->first();
+            dd($users);
+            $user = $users[0];
             $user->memberStatus == 'Member';
             $user->save();
-            dd($user);
+            
             return $next($request);
         }
  
