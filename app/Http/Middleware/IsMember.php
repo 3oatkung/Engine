@@ -24,8 +24,9 @@ class IsMember
         }
         elseif(count(Payment::where('email',Auth::user()->email)->get())>0)
         {
-            Auth::user()->memberStatus == "Member";
-            Auth::user()->save();
+            $user = Auth::user();
+            $user->memberStatus == "Member";
+            $user->save();
             return $next($request);
         }
  
