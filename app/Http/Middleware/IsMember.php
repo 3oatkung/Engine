@@ -27,7 +27,7 @@ class IsMember
         {
             $users = User::where('email',Auth::user()->email)->get();
             $user = $users[0];
-            $user->memberStatus == 'Member';
+            $user->memberStatus = 'Member';
             $user->save();
             dd($user);
             return $next($request);
