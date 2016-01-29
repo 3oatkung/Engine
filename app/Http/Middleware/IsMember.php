@@ -29,7 +29,7 @@ class IsMember
             $user = $users[0];
             $user->memberStatus == 'Member';
             $user->save();
-            
+            dd($user);
             return $next($request);
         }
  
