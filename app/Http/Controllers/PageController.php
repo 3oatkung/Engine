@@ -18,6 +18,7 @@ class PageController extends Controller
      */
     public function index()
     {
+        dd(Auth::user());
         $memberStatus = null;
         $user=null;
         if(!is_null(Auth::user()))
