@@ -156,7 +156,7 @@
 
                             <div class="top-big-link wow fadeInUp">
                             	<a class="btn btn-link-1 scroll-link" href="#pricing">ค่าใช้จ่าย</a>
-                            	<a class="btn btn-link-2 scroll-link" href="#always-beautiful">สั่งซ์้อเลย</a>
+                            	<a class="launch-modal btn btn-link-1" data-modal-id="modal-payment">สั่งซื้อเลย</a>
                             </div>
                         </div>
                         <div class="col-sm-5 form-box wow fadeInUp">
