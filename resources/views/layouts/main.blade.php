@@ -120,7 +120,7 @@
 			                            	</p>
 			                            </div>
 			                            <div class="top-big-link wow fadeInUp">
-			                            	<a class="btn btn-link-2" href="/lesson">เข้าสู่บทเรียน</a>
+			                            	<a class="btn btn-link-2" href="/lesson">เข้าสู่บทเรียน</a>
 			                            </div>
 			                        </div>
 			                    </div>	      						

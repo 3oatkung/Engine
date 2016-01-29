@@ -48,7 +48,7 @@ Route::get('editUser/{id}',['middleware'=>['auth','isAdmin'],'uses'=> 'UserContr
 Route::post('editUser/{id}',['middleware'=>['auth','isAdmin'],'uses'=>'UserController@editUser']);
 Route::get('deleteUser/{id}',['middleware'=>['auth','isAdmin'],'uses'=>'UserController@deleteUser']);
 Route::get('setMember/{id}',['middleware'=>['auth','isAdmin'],'uses'=>'UserController@setMember']);
-Route::get('cancelMember/{id}',['middleware'=>['auth','isAdmin'],'uses'=>'Usercontroller@cancelMember']);
+Route::get('cancelMember/{id}',['middleware'=>['auth','isAdmin'],'uses'=>'UserController@cancelMember']);
 // LESSON
 Route::get('lessonAdmin',['middleware'=>['auth','isAdmin'],'uses'=>'LessonController@getLessonAdminIndex']);
 Route::get('editLesson/{id}',['middleware'=>['auth','isAdmin'],'uses'=>'LessonController@getLessonInfo']);
