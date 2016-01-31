@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Payment;
 
 class UserController extends Controller
 {
@@ -54,6 +55,11 @@ class UserController extends Controller
     	$users = User::where('id',$id)->get();
     	$users[0]->memberStatus = '';
     	$users[0]->save();
+        
+        $payments = Payment::where('email',$users[0]->email)->get();
+        $payment = $payments[0];
+        $payment->delete();
+        
     	return redirect('/user');
     }
 
