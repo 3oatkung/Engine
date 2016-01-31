@@ -45,7 +45,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-7 video fadeInLeft" style="padding-top:20px;">
-                            <div class="responsive-video">
+                            <div class="embed-responsive embed-responsive-16by9">
 		                    	<iframe src="{{$lesson->videoUrl}}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		                    </div>
                         </div>
