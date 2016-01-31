@@ -81,7 +81,7 @@
                     </div>
                     <div class="row">
 	                    <div class="col-sm-12 top-big-link wow fadeInUp">
-	                    	<a class="btn btn-link-1" href="#pricing">โหลดเอกสาร</a>
+	                    	<a class="aunch-modal btn btn-link-1" data-modal-id="modal-lesson" href="#pricing">เปิดวิดีโอ</a>
 	                    	<a class="btn btn-link-2" href="{{url()}}/lesson">กลับสู่หน้าบทเรียน</a>
 	                    </div>
                     </div>
@@ -91,6 +91,7 @@
         </div>
 
 @include('layouts.script')
+@include('lesson.modal_lesson')
 @endsection
 
 <!--
