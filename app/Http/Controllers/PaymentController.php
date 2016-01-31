@@ -20,6 +20,7 @@ class PaymentController extends Controller
         return Validator::make($request, [
             'name' => 'required|max:255',
             'email' => 'required|email',
+            'amount' => 'required',
             'date' => 'required',
             'time' => 'required',
         ]);
@@ -35,6 +36,7 @@ class PaymentController extends Controller
          $this->validate($request, [
             'name' => 'required|max:255',
             'email' => 'required|email',
+            'amount' => 'required',
             'date' => 'required',
             'time' => 'required',
             ]);
@@ -43,6 +45,8 @@ class PaymentController extends Controller
         $payment = new Payment();
         $payment->name = $request->name;
         $payment->email = $request->email;
+        $payment->amount = $request->amount;
+        $payment->checked = false;
         $payment->date = $request->date;
         $payment->time = $request->time;
         $payment->method = $request->paymentMethod;
@@ -61,7 +65,7 @@ class PaymentController extends Controller
 
     public function getPaymentIndex()
     {
-        $payments = Payment::get();
+        $payments = Payment::orderBy('id', 'DESC')->get();
         return view('payment.paymentIndex', compact('payments'));
     }
 
@@ -69,20 +73,50 @@ class PaymentController extends Controller
     {
         $payments = Payment::where('id',$id)->get();
         $payment = $payments[0];
-        $users = User::where('email',$payment->email)->get();
-        if(count($users)>1)
-        {
-            $users[0]->memberStatus = '';
-            $users[0]->save();   
-        }
         $payment->delete();
+        return redirect('/showPayments');
+    }
+
+    public function checkedPayment($id)
+    {
+        $payments = Payment::where('id',$id)->get();
+        $payment = $payments[0];
+        $payment->checked = "checked";
+        $payment->save();
+
+        $users = User::where('email',$payment->email)->get();
+        if(count($users)>0)
+        {
+            $user = $users[0];
+            $user->checked = "checked";
+            $user->save();
+            
+        }
+        return redirect('/showPayments');
+    }
+
+    public function uncheckedPayment($id)
+    {
+        $payments = Payment::where('id',$id)->get();
+        $payment = $payments[0];
+        $payment->checked = "";
+        $payment->save();
+
+        $users = User::where('email',$payment->email)->get();
+        if(count($users)>0)
+        {
+            $user = $users[0];
+            $user->checked = "";
+            $user->save();
+            
+        }
         return redirect('/showPayments');
     }
 
     public function setMember($email)
     {
         $users = User::where('email',$email)->get();
-        if(count($users)>1)
+        if(count($users)>0)
         {
             $users[0]->memberStatus = 'Member';
             $users[0]->save();   
@@ -117,5 +151,7 @@ class PaymentController extends Controller
             $message->to($emailInfo['email'])->subject('eXvertise : ขอบคุณสำหรับการสั่งซื้อ');
         });
     }
+
+
 
 }

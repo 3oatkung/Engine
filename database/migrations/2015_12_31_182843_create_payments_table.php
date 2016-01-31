@@ -16,9 +16,11 @@ class CreatePaymentsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email');
+            $table->string('amount');
             $table->string('date');
             $table->string('time');
             $table->string('method');
+            $table->string('checked')->nullable();
             $table->timestamps();
         });
     }

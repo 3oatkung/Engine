@@ -54,6 +54,7 @@
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">ชื่อ</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">อีเมลล์</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">สถานะสมาชิก</th>
+                                    <th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">สถานะการตรวจสอบ</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">เพิ่มเป็นสมาชิก</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">ยกเลิกสมาชิก</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">แก้ไขผู้ใช้งาน</th>
@@ -65,6 +66,7 @@
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">{{$user->name}}</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">{{$user->email}}</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">{{$user->memberStatus}}</th>
+                                    <th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;"><input type="checkbox" name="checked" {{$user->checked}}></th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;"><a href='/setMember/{{$user->id}}' style="color:white;"><u>เพิ่มเป็นสมาชิก</u></a></th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;"><a href='/cancelMember/{{$user->id}}' style="color:white;"><u>ยกเลิกสมาชิก</u></a></th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;"><a href='/editUser/{{$user->id}}' style="color:white;"><u>แก้ไขผู้ใช้งาน</u></a></th>

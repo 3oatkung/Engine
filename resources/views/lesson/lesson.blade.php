@@ -81,7 +81,6 @@
                     </div>
                     <div class="row">
 	                    <div class="col-sm-12 top-big-link wow fadeInUp">
-	                    	<a class="launch-modal btn btn-link-1" data-modal-id="modal-lesson">เปิดวิดีโอ</a>
 	                    	<a class="btn btn-link-2" href="{{url()}}/lesson">กลับสู่หน้าบทเรียน</a>
 	                    </div>
                     </div>

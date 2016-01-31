@@ -51,9 +51,11 @@
 								<tr style="border:1px solid #FFFFFF;">
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">ชื่อ</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">อีเมลล์</th>
+                                    <th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">จำนวนเงิน</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">วันที่ชำระเงิน</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">เวลาที่ชำระเงิน</th>
                                     <th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">วิธีการชำระเงิน</th>
+                                    <th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">สถานะการตรวจสอบ</th>
                                     <th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">ลบการชำระเงิน</th>
 								</tr>
 
@@ -61,9 +63,11 @@
 								<tr>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">{{$payment->name}}</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">{{$payment->email}}</th>
+                                    <th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">{{$payment->amount}}</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">{{$payment->date}}</th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">{{$payment->time}}</th>
-                                    <th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">{{$payment->paymentMethod}}</th>
+                                    <th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;">{{$payment->method}}</th>
+                                    <th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;"><input type="checkbox" name="checked" {{$payment->checked}}>     <a href='/checkedPayment/{{$payment->id}}' style="color:white;" class='button'><u>ตรวจสอบแล้ว</u> | <a href='/uncheckedPayment/{{$payment->id}}' style="color:white;" class='button'><u>ยกเลิก</u></th>
 									<th style="border:1px solid #FFFFFF; padding-left: 5px; padding-right: 5px;"><a href='/deletePayment/{{$payment->id}}' style="color:white;"><u>ลบการชำระเงิน</u></a></th>
 								</tr>
 								@endforeach

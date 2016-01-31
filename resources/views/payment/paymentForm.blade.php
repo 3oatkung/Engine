@@ -65,6 +65,10 @@
                                         <input type="email" name="email" placeholder="อีเมลล์ที่ต้องการใช้งาน" value="{{ old('email') }}" class="form-control input-lg">
                                     </div>      
                                     <div class="form-group">
+                                        <label class="sr-only" for="form-first-name">จำนวนเงินที่ชำระ</label>
+                                        <input type="text" name="amount" placeholder="จำนวนเงินที่ชำระ" value="{{ old('amount') }}" class="form-control input-lg">
+                                    </div>      
+                                    <div class="form-group">
                                         <label class="sr-only" for="form-first-name">วันที่ชำระเงิน</label>
                                         <input type="text" name="date" placeholder="วันที่ชำระเงิน (วัน/เดือน/ปี)" value="{{ old('lastname') }}" class="form-control input-lg">
                                     </div>
@@ -77,8 +81,8 @@
                                     <div class="form-group">
                                       <label class="sr-only" for="form-first-name">วิธีการชำระเงิน</label>
                                       <select type="text" name="paymentMethod" placeholder="วิธีการชำระเงิน" class="form-control input-lg">
-                                        <option>ชำระผ่าน Paypal</option>
-                                        <option>ชำระผ่าน การโอนเงิน</option>
+                                        <option value="ชำระผ่าน Paypal" selected>ชำระผ่าน Paypal</option>
+                                        <option value="ชำระผ่าน การโอนเงิน">ชำระผ่าน การโอนเงิน</option>
                                       </select>
                                     </div>
 

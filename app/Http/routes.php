@@ -65,3 +65,5 @@ Route::post('createPayment',['middleware'=>['auth'],'uses'=>'PaymentController@c
 Route::get('showPayments',['middleware'=>['auth','isAdmin'],'uses'=>'PaymentController@getPaymentIndex']);
 Route::get('showPayments/{id}',['middleware'=>['auth','isAdmin'],'uses'=>'PaymentController@getPaymentDetail']);
 Route::get('deletePayment/{id}',['middleware'=>['auth','isAdmin'],'uses'=>'PaymentController@deletePayment']);
+Route::get('checkedPayment/{id}',['middleware'=>['auth','isAdmin'],'uses'=>'PaymentController@checkedPayment']);
+Route::get('uncheckedPayment/{id}',['middleware'=>['auth','isAdmin'],'uses'=>'PaymentController@uncheckedPayment']);
