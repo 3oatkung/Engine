@@ -13,12 +13,12 @@
                     <div class="col-sm-4 pricing-box pricing-box-best wow fadeInDown">
                     	<div class="pricing-box-inner">
 		                	<div class="pricing-box-price">
-		                		<span>เพียง</span><strong>500</strong><span> บาท</span>
+		                		<span>เพียง</span><strong>599</strong><span> บาท</span>
 		                		<div class="pricing-box-icon">
 			                		<span aria-hidden="true" class="typcn typcn-star"></span>
 			                	</div>
 		                	</div>
-		                    <h3>จากราคาเต็ม <strong>1000</strong> บาท</h3>
+		                    <h3>จากราคาเต็ม <strike>1,000</strike> บาท</h3>
 		                    <h4>คุณจะได้เรียนรู็</h4>
 		                    <div class="pricing-box-features">
 		                    	<ul>

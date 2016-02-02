@@ -15,15 +15,18 @@
 	                    <hr>
 	                    <h3>วิธีที่ 1 สั่งซื้อผ่าน Paypal</h3>
 	                    <p>
-	                    	คลิกที่ปุ่ม Buy Now เพื่อสั่งซื้อผ่าน Paypal
+	                    	คลิกที่ปุ่ม "ชำระทันที" เพื่อสั่งซื้อผ่าน Paypal
 		                    	<!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/bdg_secured_by_pp_2line.png" alt="How PayPal Works" /></td></tr></table><!-- PayPal Logo -->
 	                        <br>
+
 	                        <form align="center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-	                        <input type="hidden" name="cmd" value="_s-xclick">
-	                        <input type="hidden" name="hosted_button_id" value="KJCTRVY4YM7JS">
-	                        <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-	                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	                        </form>
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="KJCTRVY4YM7JS">
+							<input type="image" src="https://www.paypalobjects.com/th_TH/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal คือ วิธีชำระเงินออนไลน์ที่ปลอดภัยและง่ายยิ่งขึ้น!">
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							</form>
+
+
 
 	                        หลักจากชำระเงินเรียบร้อยแล้ว ให้แจ้งได้ที่ <a href="{{url()}}/createPayment">แจ้งการชำระเงิน</a>
 	                    </p>
