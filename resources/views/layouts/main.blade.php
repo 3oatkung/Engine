@@ -113,7 +113,7 @@
 	      						<!-- MEMBER MENU -->
 			                    <div class="row">
 			                        <div class="col-sm-12 text">
-			                            <h1 class="wow fadeInLeftBig">โฆษณาบนเฟสบุ๊ค "คุณทำได้" ด้วยตัวเอง</h1>
+			                            <h1 class="wow fadeInLeftBig">ธุรกิจบนเฟสบุ๊ค "คุณทำได้" ด้วยตัวเอง</h1>
 			                            <div class="description wow fadeInLeftBig">
 			                            	<p>
 				                            	มาเริ่มเรียนไปกับเรา เราจะสอนคุณตั้งแต่ การทำเพจ <br>สร้างโฆษณา และ เทคนิค ที่จะทำให้ลดค่าใช้จ่ายลง
@@ -129,7 +129,7 @@
 	      						<!-- ADMIN MENU -->
 			                    <div class="row">
 			                        <div class="col-sm-12 text">
-			                            <h1 class="wow fadeInLeftBig">โฆษณาบนเฟสบุ๊ค "คุณทำได้" ด้วยตัวเอง</h1>
+			                            <h1 class="wow fadeInLeftBig">ธุรกิจบนเฟสบุ๊ค "คุณทำได้" ด้วยตัวเอง</h1>
 			                            <div class="description wow fadeInLeftBig">
 			                            	<p>
 				                            	มาเริ่มเรียนไปกับเรา เราจะสอนคุณตั้งแต่ การทำเพจ <br>สร้างโฆษณา และ เทคนิค ที่จะทำให้ลดค่าใช้จ่ายลง
@@ -147,7 +147,7 @@
 	      						<!-- GUEST MENU -->
               			     	<div class="row">
                         <div class="col-sm-7 text">
-			                            <h1 class="wow fadeInLeftBig">โฆษณาบนเฟสบุ๊ค "คุณทำได้" ด้วยตัวเอง</h1>
+			                            <h1 class="wow fadeInLeftBig">ธุรกิจบนเฟสบุ๊ค "คุณทำได้" ด้วยตัวเอง</h1>
 			                            <div class="description wow fadeInLeftBig">
 			                            	<p>
 				                            	มาเริ่มเรียนไปกับเรา เราจะสอนคุณตั้งแต่ การทำเพจ <br>สร้างโฆษณา และ เทคนิค ที่จะทำให้ลดค่าใช้จ่ายลง
